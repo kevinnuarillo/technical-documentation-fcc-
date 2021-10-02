@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Lato, sans-serif;
+ display: flex;
+ line-height: 1.7;
+ margin: 0;
+ padding: 0;
+}
+
+/**
+
+/* Main Section */
+
+main {
+ padding: 25px;
+ height: 100vh;
+ overflow-y: scroll;
+ padding-bottom: 250px;
+}
+
+main header, nav header {
+ font-weight: 900;
+}
+
+main header {
+ font-size: 2em;
+}
+
+/* Navbar */
+
+nav {
+ border-right: 1px solid black;
+ width: 800px;
+}
+
+nav header {
+ font-size: 1.4em;
+ padding: 15px;
+}
+
+nav a {
+ display: block;
+ border-top: 1px solid gray;
+ padding: 10px;
+ text-decoration: none;
+ color: dimgray;
+}
+
+code pre {
+ background-color: #E0E1EC;
+ padding: 10px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 576px) {
+ body{
+  flex-direction: column;
+ }
+ 
+ nav {
+  border-bottom: 1px solid black;
+  overflow-y: scroll;
+  height: px;
+ }
+ 
+ main {
+  overflow-y: unset;
+ }
+}
